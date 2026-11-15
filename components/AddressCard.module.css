@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-14);
+}
+
+.address {
+  line-height: var(--line-height-relaxed);
+}
+
+.phone {
+  --phone-height: 48px;
+  --underline-thickness: 4px;
+  --underline-offset: 6px;
+
+  display: flex;
+  align-items: center;
+  min-height: var(--phone-height);
+  color: var(--color-red);
+  text-decoration: underline;
+  text-decoration-thickness: var(--underline-thickness);
+  text-underline-offset: var(--underline-offset);
+}

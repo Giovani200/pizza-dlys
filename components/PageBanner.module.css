@@ -1,0 +1,41 @@
+.banner {
+  --banner-padding-top: 36px;
+
+  position: relative;
+  overflow: clip;
+  padding: var(--banner-padding-top) var(--side-padding) var(--space-44);
+  background-color: var(--color-red);
+  color: var(--color-cream);
+}
+
+.text {
+  --text-max-width: none;
+
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  max-width: var(--text-max-width);
+  font-size: var(--font-size-body);
+}
+
+.intro {
+  --intro-max-width: 58%;
+
+  max-width: var(--intro-max-width);
+}
+
+@media (min-width: 75rem) {
+  .banner {
+    padding: var(--space-64) var(--side-padding) var(--space-72);
+  }
+
+  .text {
+    --text-max-width: 640px;
+  }
+
+  .intro {
+    --intro-max-width: none;
+  }
+}

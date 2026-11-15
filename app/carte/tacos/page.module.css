@@ -1,0 +1,143 @@
+.bannerProduct {
+  --product-tilt: -7deg;
+
+  right: -46px;
+  bottom: -24px;
+  width: 170px;
+}
+
+.section {
+  --section-padding-bottom: var(--space-72);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+  padding: var(--space-32) var(--side-padding) var(--section-padding-bottom);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-14);
+}
+
+.stepTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.stepNumber {
+  --number-size: 1.4em;
+
+  box-sizing: content-box;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: var(--number-size);
+  height: var(--number-size);
+  border: var(--border);
+  border-radius: var(--radius-small);
+  background: var(--color-yellow);
+  color: var(--color-ink);
+}
+
+.block {
+  display: block;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.base {
+  padding: var(--space-12) 0;
+}
+
+.baseDetail {
+  display: block;
+  margin-top: var(--space-2);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  padding: var(--space-6) var(--space-12);
+  border: var(--border);
+  border-radius: var(--radius-small);
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.extra {
+  --extra-padding: var(--space-10);
+
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-12);
+  padding: var(--extra-padding) 0;
+}
+
+.otherExtras {
+  margin-top: var(--space-6);
+}
+
+.signatures {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.signature {
+  padding: var(--space-14) 0;
+}
+
+.signatureTitle {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-10);
+}
+
+.signaturePrice {
+  color: var(--color-yellow);
+  white-space: nowrap;
+}
+
+.signatureDetail {
+  margin-top: var(--space-6);
+}
+
+@media (min-width: 75rem) {
+  .bannerProduct {
+    top: 10px;
+    right: 60px;
+    bottom: auto;
+    width: 420px;
+  }
+
+  .section {
+    --section-padding-bottom: 110px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--space-48) var(--space-40);
+    padding-top: var(--space-64);
+  }
+
+  .extra {
+    --extra-padding: var(--space-14);
+  }
+}

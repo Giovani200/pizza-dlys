@@ -1,0 +1,145 @@
+.section {
+  --section-padding-top: var(--space-56);
+  --section-padding-bottom: var(--space-64);
+  --title-gap: var(--space-32);
+
+  position: relative;
+  overflow: clip;
+  padding: var(--section-padding-top) var(--side-padding) var(--section-padding-bottom);
+  background-color: var(--color-orange);
+  color: var(--color-ink);
+}
+
+.title {
+  margin-bottom: var(--title-gap);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.summaryRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-12);
+  padding: var(--space-14) 0;
+}
+
+.block {
+  display: block;
+}
+
+.summaryDetail {
+  display: block;
+  margin-top: var(--space-2);
+}
+
+.redPrice {
+  color: var(--color-red);
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+.summaryLink {
+  margin-top: var(--space-4);
+}
+
+.detailed {
+  display: none;
+}
+
+.menuCard {
+  --card-inner-padding: var(--space-40) var(--space-40) 170px;
+}
+
+.menuPrice {
+  margin-top: var(--space-6);
+  color: var(--color-yellow);
+}
+
+.menuDetail {
+  --detail-width: 300px;
+
+  max-width: var(--detail-width);
+  margin-top: var(--space-14);
+}
+
+.burgerProduct {
+  --product-tilt: 6deg;
+  --pop-delay: 0.2s;
+  --float-delay: -0.4s;
+
+  right: -50px;
+  bottom: -70px;
+  width: 290px;
+}
+
+.tartProduct {
+  --product-tilt: 12deg;
+  --pop-delay: 0.35s;
+  --float-delay: -0.7s;
+
+  top: -60px;
+  right: -30px;
+  width: 160px;
+}
+
+.kicker {
+  display: block;
+  color: var(--color-red);
+}
+
+.midiTitle {
+  display: block;
+  margin-top: var(--space-8);
+}
+
+.midiHours {
+  margin: var(--space-8) 0 var(--space-14);
+}
+
+.formula {
+  padding: var(--space-14) 0;
+}
+
+.formulaTitle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.formulaDetail,
+.footnote {
+  margin-top: var(--space-6);
+}
+
+@media (min-width: 75rem) {
+  .section {
+    --section-padding-top: 110px;
+    --section-padding-bottom: var(--space-120);
+    --title-gap: var(--space-64);
+  }
+
+  .summary {
+    display: none;
+  }
+
+  .detailed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: var(--space-56);
+  }
+}

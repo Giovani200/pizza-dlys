@@ -1,0 +1,102 @@
+.bannerProduct {
+  --product-tilt: 6deg;
+
+  right: -30px;
+  bottom: -22px;
+  width: 160px;
+}
+
+.section {
+  --section-padding-bottom: var(--space-72);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+  padding: var(--space-32) var(--side-padding) var(--section-padding-bottom);
+}
+
+.groupTitle {
+  padding-bottom: var(--space-12);
+}
+
+.poster {
+  box-sizing: content-box;
+  width: 100%;
+  height: auto;
+  margin: var(--space-4) 0 var(--space-8);
+  border: var(--border);
+  border-radius: var(--radius-small);
+  background: var(--color-white);
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.burger {
+  --price-column: 80px;
+  --burger-padding: var(--space-12);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--price-column);
+  align-items: baseline;
+  gap: var(--space-4) var(--space-10);
+  padding: var(--burger-padding) 0;
+}
+
+.block {
+  display: block;
+}
+
+.composition {
+  display: block;
+  margin-top: var(--space-2);
+}
+
+.price {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.menuOptionCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-16);
+}
+
+.menuOptionDetail {
+  flex-basis: 100%;
+}
+
+@media (min-width: 75rem) {
+  .bannerProduct {
+    top: 30px;
+    right: 80px;
+    bottom: auto;
+    width: 380px;
+  }
+
+  .section {
+    --section-padding-bottom: 110px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: var(--space-48) var(--space-40);
+    padding-top: var(--space-64);
+  }
+
+  .burger {
+    --burger-padding: var(--space-14);
+  }
+
+  .menuOption {
+    --menu-option-max-width: 560px;
+
+    grid-column: span 2;
+    max-width: var(--menu-option-max-width);
+  }
+}

@@ -1,0 +1,219 @@
+.section {
+  --section-padding-top: 130px;
+  --section-padding-bottom: var(--space-64);
+
+  position: relative;
+  overflow: clip;
+  padding: var(--section-padding-top) var(--side-padding) var(--section-padding-bottom);
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.title {
+  color: var(--color-red);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-96);
+}
+
+.linkCard {
+  --hover-shift: -3px;
+
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition:
+    translate var(--duration-base) ease,
+    box-shadow var(--duration-base) ease;
+}
+
+.linkCard:hover {
+  translate: var(--hover-shift) var(--hover-shift);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.linkCard:hover [data-product] {
+  rotate: calc(-1 * var(--product-tilt, 0deg));
+  scale: var(--hover-scale);
+}
+
+.followingCard {
+  --card-gap: 88px;
+
+  margin-top: var(--card-gap);
+}
+
+.body {
+  --body-padding: var(--card-padding);
+
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-14);
+  padding: var(--body-padding);
+}
+
+.pizzaProduct {
+  --product-tilt: -6deg;
+  --pop-delay: 0.15s;
+  --float-delay: -0.3s;
+
+  top: -112px;
+  right: -118px;
+  width: 290px;
+}
+
+.pizzaText {
+  --text-width: 70%;
+
+  max-width: var(--text-width);
+}
+
+.pizzaList,
+.burgerList {
+  display: none;
+}
+
+.tacosProduct {
+  --product-tilt: -8deg;
+  --pop-delay: 0.2s;
+  --float-delay: -0.4s;
+
+  top: -84px;
+  left: -38px;
+  width: 200px;
+}
+
+.tacosBody {
+  --tacos-reserved-top: 150px;
+
+  padding-top: var(--tacos-reserved-top);
+}
+
+.tacosTitle {
+  position: absolute;
+  top: var(--body-padding);
+  right: var(--body-padding);
+}
+
+.burgerProduct {
+  --product-tilt: 7deg;
+  --pop-delay: 0.3s;
+  --float-delay: -0.6s;
+
+  top: -104px;
+  right: -28px;
+  width: 150px;
+}
+
+.burgerText {
+  --text-width: 52%;
+
+  max-width: var(--text-width);
+}
+
+.priceList {
+  padding: 0;
+  list-style: none;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-12);
+  padding: var(--space-14) 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: var(--space-6);
+}
+
+.footerRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-10);
+}
+
+.yellowPrice {
+  color: var(--color-yellow);
+}
+
+@media (min-width: 75rem) {
+  .section {
+    --section-padding-top: 190px;
+    --section-padding-bottom: var(--space-120);
+  }
+
+  .cards {
+    --row-gap: 90px;
+
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    grid-template-rows: auto auto;
+    gap: var(--row-gap) var(--space-56);
+    margin-top: var(--space-120);
+  }
+
+  .pizzaCard {
+    grid-row: span 2;
+  }
+
+  .followingCard {
+    margin-top: 0;
+  }
+
+  .pizzaProduct {
+    --product-width: 620px;
+
+    top: -70px;
+    right: auto;
+    left: 50%;
+    width: var(--product-width);
+    margin-left: calc(-0.5 * var(--product-width));
+  }
+
+  .pizzaBody {
+    --pizza-reserved-top: 300px;
+
+    padding-top: var(--pizza-reserved-top);
+  }
+
+  .pizzaList,
+  .burgerList {
+    display: block;
+  }
+
+  .tacosProduct {
+    top: -110px;
+    left: 10px;
+    width: 330px;
+  }
+
+  .tacosBody {
+    --tacos-reserved-top: 240px;
+  }
+
+  .burgerProduct {
+    top: -150px;
+    right: -50px;
+    width: 230px;
+  }
+
+  .burgerText {
+    --text-width: 55%;
+  }
+
+  .burgerList {
+    margin-top: var(--space-40);
+  }
+}

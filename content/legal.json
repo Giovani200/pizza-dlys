@@ -1,0 +1,47 @@
+{
+  "title": "Mentions légales",
+  "developer": "Giovani",
+  "sections": [
+    {
+      "heading": "Éditeur du site",
+      "paragraphs": [
+        "PIZZA D LYS, société à responsabilité limitée (SARL) au capital de [à compléter] €.",
+        "Siège social : {address}.",
+        "SIREN 531 054 161, immatriculée au RCS de [greffe à compléter]. SIRET du siège : 531 054 161 00017.",
+        "Numéro de TVA intracommunautaire : FR60 531 054 161 (à confirmer).",
+        "Téléphone : {phone}. Adresse électronique : [à compléter]."
+      ]
+    },
+    {
+      "heading": "Directeur de la publication",
+      "paragraphs": [
+        "M. Abdhafid Boukhalfi, gérant (à confirmer)."
+      ]
+    },
+    {
+      "heading": "Hébergement",
+      "paragraphs": [
+        "[à compléter : nom, raison sociale, adresse et téléphone de l'hébergeur]."
+      ]
+    },
+    {
+      "heading": "Conception et développement",
+      "paragraphs": [
+        "{developer}."
+      ]
+    },
+    {
+      "heading": "Propriété intellectuelle",
+      "paragraphs": [
+        "Le nom, le logo, les affiches et les photographies du restaurant appartiennent à PIZZA D LYS. Toute reproduction, totale ou partielle, sans autorisation écrite est interdite."
+      ]
+    },
+    {
+      "heading": "Données personnelles et cookies",
+      "paragraphs": [
+        "Ce site ne collecte aucune donnée personnelle et ne dépose aucun cookie.",
+        "Les liens vers Uber Eats et Google Maps ouvrent des services tiers, soumis à leurs propres conditions et politiques de confidentialité."
+      ]
+    }
+  ]
+}

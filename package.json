@@ -1,0 +1,37 @@
+{
+  "name": "pizza-dlys",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint",
+    "tokens": "node scripts/build-tokens.mjs",
+    "predev": "npm run tokens && npm run images",
+    "prebuild": "npm run tokens && npm run images",
+    "test": "vitest run",
+    "verify": "npm run build && npm test && npm run test:a11y",
+    "test:a11y": "playwright test",
+    "preview": "serve out",
+    "images": "node scripts/build-images.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "node-html-parser": "^9.0.7",
+    "serve": "^14.2.8",
+    "sharp": "^0.35.5",
+    "typescript": "^5",
+    "vitest": "^5.1.0"
+  }
+}

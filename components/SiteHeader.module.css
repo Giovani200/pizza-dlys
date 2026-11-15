@@ -1,0 +1,17 @@
+.header {
+  --focus-color: var(--color-cream);
+
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-10) var(--space-14);
+  background: var(--color-red);
+}
+
+@media (min-width: 75rem) {
+  .header {
+    padding: var(--space-16) var(--side-padding);
+  }
+}

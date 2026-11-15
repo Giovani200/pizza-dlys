@@ -1,0 +1,54 @@
+/* Callers adjust the inner padding through --card-inner-padding, never by redeclaring padding. */
+.card {
+  position: relative;
+  padding: var(--card-inner-padding, var(--card-padding));
+  border: var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  font-size: var(--font-size-body);
+}
+
+.paper {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.red {
+  --focus-color: var(--color-cream);
+
+  background: var(--color-red);
+  color: var(--color-cream);
+}
+
+.orange {
+  background: var(--color-orange);
+  color: var(--color-ink);
+}
+
+.yellow {
+  background: var(--color-yellow);
+  color: var(--color-ink);
+}
+
+.ink {
+  --focus-color: var(--color-cream);
+
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.flush {
+  --card-inner-padding: 0;
+}
+
+.tilt-left {
+  --card-tilt: calc(-1 * var(--tilt-home-cards));
+
+  transform: rotate(var(--card-tilt));
+}
+
+.tilt-right {
+  --card-tilt: var(--tilt-home-cards);
+
+  transform: rotate(var(--card-tilt));
+}

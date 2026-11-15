@@ -1,0 +1,18 @@
+.bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: var(--space-10);
+  padding: var(--space-10) var(--space-14) var(--space-14);
+  border-top: var(--border);
+  background: var(--color-cream);
+}
+
+@media (min-width: 75rem) {
+  .bar {
+    display: none;
+  }
+}

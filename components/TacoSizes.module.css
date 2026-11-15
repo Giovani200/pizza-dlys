@@ -1,0 +1,23 @@
+.sizes {
+  display: flex;
+  gap: var(--space-10);
+}
+
+.size {
+  flex: 1;
+  padding: var(--space-10) var(--space-6);
+  border: var(--border);
+  border-radius: var(--radius-small);
+  background: var(--color-cream);
+  color: var(--color-ink);
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.meats {
+  display: block;
+  margin-top: var(--space-4);
+}

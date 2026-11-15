@@ -1,0 +1,83 @@
+{
+  "name": "PIZZA D-LYS",
+  "address": {
+    "street": "593 rue du Bas Moulin",
+    "postal_code": "77190",
+    "city": "Dammarie-les-Lys"
+  },
+  "phone_display": "01 64 37 02 47",
+  "phone_href": "tel:+33164370247",
+  "uber_eats_url": "https://www.ubereats.com/fr/store/pizza-d-lys/zB9d9JwdQg69Sf3zEkbnuA",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=593+rue+du+Bas+Moulin+77190+Dammarie-les-Lys",
+  "hours": {
+    "timezone": "Europe/Paris",
+    "weekly": {
+      "monday": [
+        [
+          "11:00",
+          "14:30"
+        ],
+        [
+          "18:00",
+          "22:30"
+        ]
+      ],
+      "tuesday": [
+        [
+          "11:00",
+          "14:30"
+        ],
+        [
+          "18:00",
+          "22:30"
+        ]
+      ],
+      "wednesday": [
+        [
+          "11:00",
+          "14:30"
+        ],
+        [
+          "18:00",
+          "22:30"
+        ]
+      ],
+      "thursday": [
+        [
+          "11:00",
+          "14:30"
+        ],
+        [
+          "18:00",
+          "22:30"
+        ]
+      ],
+      "friday": [
+        [
+          "18:00",
+          "22:30"
+        ]
+      ],
+      "saturday": [
+        [
+          "11:00",
+          "14:30"
+        ],
+        [
+          "18:00",
+          "22:30"
+        ]
+      ],
+      "sunday": [
+        [
+          "18:00",
+          "22:30"
+        ]
+      ]
+    },
+    "phone_order_note": "Fin des prises de commandes par téléphone 30 minutes avant la fermeture."
+  },
+  "delivery": "On ne livre pas nous-mêmes. La livraison passe par Uber Eats.",
+  "allergens": "Informations allergènes disponibles sur demande en boutique.",
+  "copyright": "© 2026 Pizza D-Lys"
+}

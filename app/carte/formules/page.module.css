@@ -1,0 +1,110 @@
+.bannerProduct {
+  --product-tilt: 6deg;
+
+  right: -30px;
+  bottom: -22px;
+  width: 160px;
+}
+
+.section {
+  --section-padding-bottom: 88px;
+
+  overflow: clip;
+  padding: var(--space-56) var(--side-padding) var(--section-padding-bottom);
+  background-color: var(--color-orange);
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-48);
+}
+
+.menuCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-14);
+}
+
+.menuHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4) var(--space-12);
+}
+
+.menuPrice {
+  color: var(--color-yellow);
+  white-space: nowrap;
+}
+
+.poster {
+  box-sizing: content-box;
+  width: 100%;
+  height: auto;
+  border: var(--border);
+  border-radius: var(--radius-small);
+}
+
+.kicker {
+  display: block;
+  color: var(--color-red);
+}
+
+.midiTitle {
+  display: block;
+  margin-top: var(--space-8);
+}
+
+.midiHours {
+  margin: var(--space-8) 0 var(--space-14);
+}
+
+.formula {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  padding: var(--space-18) 0;
+}
+
+.formulaTitle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-12);
+}
+
+.formulaPrice {
+  color: var(--color-red);
+  white-space: nowrap;
+}
+
+@media (min-width: 75rem) {
+  .bannerProduct {
+    top: 30px;
+    right: 80px;
+    bottom: auto;
+    width: 340px;
+  }
+
+  .section {
+    --section-padding-top: 90px;
+    --section-padding-bottom: var(--space-120);
+
+    padding-top: var(--section-padding-top);
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.6fr;
+    align-items: start;
+    gap: var(--space-48);
+  }
+
+  .formulas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 var(--space-32);
+  }
+}

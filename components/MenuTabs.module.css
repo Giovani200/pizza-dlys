@@ -1,0 +1,23 @@
+.tabs {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-8);
+  padding: var(--space-12) var(--space-14);
+  border-bottom: var(--border);
+  background: var(--color-cream);
+}
+
+@media (min-width: 75rem) {
+  .tabs {
+    display: flex;
+    gap: var(--space-12);
+    padding: var(--space-18) var(--side-padding);
+  }
+
+  .tabs > * {
+    flex: none;
+  }
+}

@@ -1,0 +1,56 @@
+/*
+ * Callers set --product-tilt, --pop-delay and --float-delay on the className they pass.
+ * They are read with fallbacks, never declared here, so the caller always wins the cascade.
+ */
+.product {
+  --pop-duration: 0.9s;
+  --pop-offset: 46px;
+  --pop-start-scale: 0.86;
+  --hover-scale: 1.04;
+
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  transform: rotate(var(--product-tilt, 0deg));
+  transition:
+    rotate 0.35s cubic-bezier(0.2, 0.9, 0.25, 1.2),
+    scale 0.35s cubic-bezier(0.2, 0.9, 0.25, 1.2);
+  animation: pop var(--pop-duration) cubic-bezier(0.2, 0.9, 0.25, 1.15) var(--pop-delay, 0.2s) both;
+}
+
+.float {
+  --float-duration: 3.2s;
+  --float-top: -6px;
+  --float-bottom: 7px;
+
+  animation: float var(--float-duration) ease-in-out var(--float-delay, -0.4s) infinite alternate;
+}
+
+.image {
+  --shadow-x: 6px;
+  --shadow-y: 8px;
+
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(var(--shadow-x) var(--shadow-y) 0 var(--alpha-ink-35));
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(var(--pop-offset)) rotate(var(--product-tilt, 0deg)) scale(var(--pop-start-scale));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(var(--product-tilt, 0deg)) scale(1);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(var(--float-top));
+  }
+  to {
+    transform: translateY(var(--float-bottom));
+  }
+}

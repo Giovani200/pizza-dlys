@@ -1,0 +1,92 @@
+.route {
+  position: relative;
+  max-width: 100%;
+  color: var(--color-cream);
+  font-size: var(--font-size-body);
+}
+
+.drawing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.track {
+  fill: none;
+  stroke: var(--alpha-cream-35);
+  stroke-width: var(--border-width-separator);
+  stroke-dasharray: 2 7;
+  stroke-linecap: round;
+}
+
+.dashes {
+  --dash-width: 4px;
+  --dash-duration: 2.4s;
+
+  fill: none;
+  stroke: var(--color-yellow);
+  stroke-width: var(--dash-width);
+  stroke-dasharray: 12 16;
+  stroke-linecap: round;
+  animation: march var(--dash-duration) linear infinite;
+}
+
+.box {
+  --box-duration: 7s;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  offset-rotate: 0deg;
+  offset-anchor: 50% 90%;
+  animation: travel var(--box-duration) ease-in-out infinite;
+}
+
+.boxShape {
+  fill: var(--color-cream);
+  stroke: var(--color-ink);
+  stroke-width: var(--border-width-separator);
+  stroke-linejoin: round;
+}
+
+.boxStripe {
+  --stripe-width: 3.5px;
+
+  stroke: var(--color-red);
+  stroke-width: var(--stripe-width);
+  stroke-linecap: round;
+}
+
+.origin {
+  --origin-offset: -10px;
+
+  position: absolute;
+  bottom: var(--origin-offset);
+  left: 0;
+}
+
+.destination {
+  --destination-offset: -12px;
+
+  position: absolute;
+  top: var(--destination-offset);
+  right: 0;
+}
+
+@keyframes march {
+  to {
+    stroke-dashoffset: -56;
+  }
+}
+
+@keyframes travel {
+  0%,
+  12% {
+    offset-distance: 0%;
+  }
+  72%,
+  100% {
+    offset-distance: 100%;
+  }
+}

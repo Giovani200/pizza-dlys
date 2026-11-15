@@ -1,0 +1,20 @@
+.content {
+  --content-max-width: 760px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+  max-width: calc(var(--content-max-width) + 2 * var(--side-padding));
+  padding: var(--space-40) var(--side-padding) var(--space-80);
+  font-size: var(--font-size-body);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+}
+
+.section h2 {
+  color: var(--color-red);
+}

@@ -1,0 +1,79 @@
+.badge {
+  --dot-size: 10px;
+  --pulse-spread: 12px;
+  --pulse-duration: 1.6s;
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  min-height: 1lh;
+}
+
+.badge[data-pending] {
+  visibility: hidden;
+}
+
+.stamp {
+  --stamp-tilt: -2deg;
+  --stamp-start-scale: 1.7;
+  --stamp-duration: 0.6s;
+  --stamp-delay: 0.05s;
+  --badge-gap: 9px;
+
+  display: inline-flex;
+  gap: var(--badge-gap);
+  width: max-content;
+  min-height: calc(1lh + 2 * var(--space-8));
+  padding: var(--space-8) var(--space-14);
+  border-radius: var(--radius-small);
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-size: var(--font-size-body);
+  transform: rotate(var(--stamp-tilt));
+  animation: stamp var(--stamp-duration) cubic-bezier(0.3, 1.4, 0.5, 1) var(--stamp-delay) both;
+}
+
+.label {
+  font-weight: var(--font-weight-bold);
+}
+
+.dotOpen,
+.dotClosed {
+  flex: none;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  animation: pulse var(--pulse-duration) ease-out infinite;
+}
+
+.dotOpen {
+  background: var(--color-status-open);
+}
+
+.dotClosed {
+  background: var(--color-status-closed);
+}
+
+@keyframes stamp {
+  0% {
+    opacity: 0;
+    transform: scale(var(--stamp-start-scale)) rotate(var(--stamp-tilt));
+  }
+  55% {
+    opacity: 1;
+    transform: scale(0.94) rotate(var(--stamp-tilt));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(var(--stamp-tilt));
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--alpha-yellow-70);
+  }
+  100% {
+    box-shadow: 0 0 0 var(--pulse-spread) var(--alpha-yellow-0);
+  }
+}

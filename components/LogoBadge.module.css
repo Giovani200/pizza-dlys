@@ -1,0 +1,41 @@
+.badge {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: var(--space-4) var(--space-10);
+  border: var(--border);
+  border-radius: var(--radius-small);
+  background: var(--color-white);
+  transform: rotate(var(--tilt-logo-badge));
+}
+
+.logo {
+  width: auto;
+}
+
+.header {
+  --logo-height: 46px;
+
+  box-shadow: var(--shadow-small);
+}
+
+.footer {
+  --logo-height: 56px;
+
+  box-shadow: var(--shadow-offset-small) var(--shadow-offset-small) 0 var(--color-red);
+}
+
+.header .logo,
+.footer .logo {
+  height: var(--logo-height);
+}
+
+@media (min-width: 75rem) {
+  .header {
+    --logo-height: 56px;
+  }
+
+  .footer {
+    --logo-height: 64px;
+  }
+}

@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-text), system-ui, sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+a {
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+
+.skip-link {
+  position: absolute;
+  z-index: 20;
+  top: var(--space-10);
+  left: var(--space-10);
+  padding: var(--space-10) var(--space-14);
+  border: var(--border);
+  border-radius: var(--radius-small);
+  background: var(--color-yellow);
+  font-weight: var(--font-weight-bold);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+:focus-visible {
+  outline: var(--border-width-focus) solid var(--focus-color, var(--color-ink));
+  outline-offset: var(--border-width-focus);
+}
+
+.display-type {
+  font-family: var(--font-text), system-ui, sans-serif;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-display);
+  line-height: var(--line-height-display);
+}
+
+.script-type {
+  font-family: var(--font-script), Georgia, serif;
+  font-weight: var(--font-weight-regular);
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: var(--line-height-none);
+}
+
+.text-h2 {
+  font-size: var(--font-size-h2);
+}
+
+.text-h3 {
+  font-size: var(--font-size-h3);
+}
+
+.text-h4 {
+  font-size: var(--font-size-h4);
+}
+
+.text-small {
+  font-size: var(--font-size-small);
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.underlined-link {
+  --underline-thickness: 3px;
+  --underline-offset: 5px;
+
+  white-space: nowrap;
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-decoration-thickness: var(--underline-thickness);
+  text-underline-offset: var(--underline-offset);
+}
+
+.separator {
+  border-top: var(--border-separator) color-mix(in srgb, currentColor 35%, transparent);
+}
+
+.halftone {
+  background-image: var(--halftone-image);
+  background-size: var(--halftone-size);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/*
+ * Scroll reveal: rises into place as it enters the viewport. Browsers without scroll-driven
+ * animations simply show the element. The keyframes keep a card's own tilt (--card-tilt).
+ */
+@supports (animation-timeline: view()) {
+  .reveal-on-scroll {
+    --reveal-offset: 26px;
+
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 50%;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(var(--reveal-offset)) rotate(var(--card-tilt, 0deg));
+  }
+  to {
+    opacity: 1;
+    transform: rotate(var(--card-tilt, 0deg));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

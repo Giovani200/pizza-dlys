@@ -1,0 +1,414 @@
+{
+  "pizzas": {
+    "families": [
+      {
+        "id": "tomato",
+        "label": "Base tomate",
+        "intro": "Chaque pizza = la Margherita (sauce tomate, mozzarella, origan) + ses ajouts.",
+        "items": [
+          {
+            "name": "Margherita",
+            "composition": "sauce tomate, mozzarella, origan",
+            "senior_eur": 6,
+            "mega_eur": 9
+          },
+          {
+            "name": "Reine",
+            "composition": "jambon*, champignons",
+            "senior_eur": 6,
+            "mega_eur": 10
+          },
+          {
+            "name": "Calzone (soufflée)",
+            "composition": "jambon*, œuf",
+            "senior_eur": 6,
+            "mega_eur": 10
+          },
+          {
+            "name": "Paysanne",
+            "composition": "jambon*, champignons, pomme de terre",
+            "senior_eur": 6,
+            "mega_eur": 10
+          },
+          {
+            "name": "Végétarienne",
+            "composition": "champignons, poivrons, olives, pomme de terre",
+            "senior_eur": 6,
+            "mega_eur": 10
+          },
+          {
+            "name": "Campione",
+            "composition": "viande hachée, champignons",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "Orientale",
+            "composition": "merguez, oignons, poivrons, œuf",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "Bolognaise",
+            "composition": "viande hachée, oignons, pomme de terre",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "Fruits de mer",
+            "composition": "cocktail de fruits de mer, persillade",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "Mexicaine",
+            "composition": "pepperoni*, poivrons, olives",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "Charcutière",
+            "composition": "jambon*, lardons*",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "4 Fromages",
+            "composition": "bleu, chèvre, parmesan",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "4 Saisons",
+            "composition": "jambon*, champignons, poivrons, olives",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "Sicilienne",
+            "composition": "thon, olives",
+            "senior_eur": 8,
+            "mega_eur": 12
+          },
+          {
+            "name": "Pakito",
+            "composition": "poulet tikka, poivrons, olives, pomme de terre",
+            "senior_eur": 8,
+            "mega_eur": 12
+          },
+          {
+            "name": "Cheese Burger",
+            "composition": "merguez, viande hachée, œuf",
+            "senior_eur": 9,
+            "mega_eur": 13
+          },
+          {
+            "name": "Brésilienne",
+            "composition": "merguez, viande hachée, poivrons, olives",
+            "senior_eur": 9,
+            "mega_eur": 13
+          },
+          {
+            "name": "Milano",
+            "composition": "poulet fumé, merguez, olives",
+            "senior_eur": 9,
+            "mega_eur": 13
+          }
+        ]
+      },
+      {
+        "id": "cream",
+        "label": "Crème, barbecue, curry",
+        "intro": "Chaque pizza = sa sauce + mozzarella + ses ajouts.",
+        "items": [
+          {
+            "name": "Mieleuse",
+            "composition": "crème fraîche + chèvre, miel",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "Tartiflette",
+            "composition": "crème fraîche + lardons*, oignons, pomme de terre",
+            "senior_eur": 7,
+            "mega_eur": 11
+          },
+          {
+            "name": "Rimini",
+            "composition": "crème fraîche + poulet fumé, oignons, champignons",
+            "senior_eur": 8,
+            "mega_eur": 12
+          },
+          {
+            "name": "Chicken",
+            "composition": "crème fraîche + poulet fumé, pomme de terre",
+            "senior_eur": 8,
+            "mega_eur": 12
+          },
+          {
+            "name": "Normande",
+            "composition": "crème fraîche + jambon*, lardons*, oignons, olives",
+            "senior_eur": 8,
+            "mega_eur": 12
+          },
+          {
+            "name": "Savoyarde",
+            "composition": "crème fraîche + jambon*, oignons, pomme de terre, reblochon",
+            "senior_eur": 8,
+            "mega_eur": 12
+          },
+          {
+            "name": "Tex Mex",
+            "composition": "crème fraîche + viande hachée, merguez, oignons, champignons",
+            "senior_eur": 9,
+            "mega_eur": 13
+          },
+          {
+            "name": "Barbecue",
+            "composition": "barbecue + jambon*, viande hachée",
+            "senior_eur": 9,
+            "mega_eur": 13
+          },
+          {
+            "name": "Buffalo",
+            "composition": "barbecue + viande hachée, oignons, poivrons, olives",
+            "senior_eur": 8,
+            "mega_eur": 12
+          },
+          {
+            "name": "Norvégienne",
+            "composition": "crème fraîche + saumon, rondelle de citron",
+            "senior_eur": 10,
+            "mega_eur": 16
+          },
+          {
+            "name": "Western",
+            "composition": "sauce curry + poulet tikka, champignons, poivrons",
+            "senior_eur": 9,
+            "mega_eur": 13
+          }
+        ]
+      },
+      {
+        "id": "special",
+        "label": "Spéciales",
+        "intro": "Chaque pizza = sa sauce + mozzarella + ses ajouts.",
+        "items": [
+          {
+            "name": "Cannibale",
+            "composition": "barbecue + poulet fumé, viande hachée, jambon",
+            "senior_eur": 9,
+            "mega_eur": 14
+          },
+          {
+            "name": "Chicago",
+            "composition": "crème fraîche + poulet fumé, cheddar, viande hachée",
+            "senior_eur": 10,
+            "mega_eur": 15
+          },
+          {
+            "name": "Royale",
+            "composition": "sauce tomate + poulet fumé, viande hachée, merguez, poivrons",
+            "senior_eur": 11,
+            "mega_eur": 16
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Changement de base (tomate vers crème fraîche, barbecue ou curry) : +1 €.",
+      "Ingrédient supplémentaire : Senior +1 € (viande +1,50 €), Méga +2 € (viande +2,50 €).",
+      "* Jambon de dinde, lardons de veau, pepperoni de bœuf (ou chorizo de bœuf)."
+    ]
+  },
+  "tacos": {
+    "sizes": [
+      {
+        "size": "M",
+        "meats": 1,
+        "price_eur": 7
+      },
+      {
+        "size": "L",
+        "meats": 2,
+        "price_eur": 8.5
+      },
+      {
+        "size": "XL",
+        "meats": 3,
+        "price_eur": 10
+      }
+    ],
+    "bases": [
+      {
+        "name": "Fromagère",
+        "detail": "sauce fromagère maison + frites maison"
+      },
+      {
+        "name": "Crudités",
+        "detail": "salade, tomate, oignon, olives vertes + frites maison"
+      }
+    ],
+    "fillings": [
+      "steak",
+      "tenders",
+      "tikka tandoori",
+      "cordon bleu",
+      "nuggets",
+      "escalope"
+    ],
+    "sauces": [
+      "ketchup",
+      "mayonnaise",
+      "barbecue",
+      "samouraï",
+      "harissa",
+      "biggy",
+      "algérienne",
+      "andalouse",
+      "chili thaï"
+    ],
+    "extras": [
+      {
+        "name": "Boursin",
+        "price_eur": 1
+      },
+      {
+        "name": "Vache qui rit",
+        "price_eur": 1
+      },
+      {
+        "name": "Cheddar",
+        "price_eur": 1
+      },
+      {
+        "name": "Champignons",
+        "price_eur": 1
+      },
+      {
+        "name": "Œuf",
+        "price_eur": 1
+      },
+      {
+        "name": "Bacon",
+        "price_eur": 1.5
+      }
+    ],
+    "other_extras": [
+      {
+        "name": "Fromagère",
+        "price_eur": 2
+      },
+      {
+        "name": "Frites",
+        "price_eur": 2
+      },
+      {
+        "name": "Boisson",
+        "price_eur": 1
+      }
+    ],
+    "signatures": [
+      {
+        "name": "Le Suprême",
+        "detail": "base + escalope + bacon + œuf",
+        "price_eur": 8.5
+      },
+      {
+        "name": "L'Extrême",
+        "detail": "base + steak + escalope + bacon + œuf",
+        "price_eur": 9.5
+      }
+    ]
+  },
+  "burgers": {
+    "menu_option": {
+      "price_eur": 2,
+      "detail": "Frites + 1 boisson."
+    },
+    "groups": [
+      {
+        "label": "Nos D-Lys Burgers",
+        "items": [
+          {
+            "name": "Cheese Burger",
+            "composition": "steak, cheddar, oignons, cornichon, sauce",
+            "price_eur": 3.9
+          },
+          {
+            "name": "Double Cheese",
+            "composition": "double steaks, double cheddars, oignons, cornichon, sauce",
+            "price_eur": 4.9
+          },
+          {
+            "name": "Triple Cheese",
+            "composition": "triple steaks, triple cheddars, oignons, cornichon, sauce",
+            "price_eur": 5.9
+          },
+          {
+            "name": "Chicken Burger",
+            "composition": "chicken burger, cheddar, salade, oignons, sauce",
+            "price_eur": 5.9
+          },
+          {
+            "name": "Fish Burger",
+            "composition": "fish, cheddar, sauce",
+            "price_eur": 5.9
+          }
+        ]
+      },
+      {
+        "label": "Nos D-Lys Premiums",
+        "items": [
+          {
+            "name": "D-Lys Fish",
+            "composition": "fish, cheddar, cornichon, salade, tomates, oignons, sauce",
+            "price_eur": 6.9
+          },
+          {
+            "name": "D-Lys Steak",
+            "composition": "double steaks, double cheddars, œuf, bacon, salade, oignon, sauce",
+            "price_eur": 7.9
+          },
+          {
+            "name": "D-Lys Chicken",
+            "composition": "chicken burger, cheddar, œuf, bacon, salade, oignon, sauce",
+            "price_eur": 7.9
+          },
+          {
+            "name": "D-Lys Crispy",
+            "composition": "steak, chicken burger, salade, oignon, cheddar, sauce",
+            "price_eur": 7.9
+          }
+        ]
+      }
+    ]
+  },
+  "formules": {
+    "menu": {
+      "name": "Menu",
+      "detail": "Hamburger (pain, steak, cornichons, sauce) + frites + boisson",
+      "price_eur": 4.9,
+      "detail_short": "Hamburger + frites + boisson"
+    },
+    "midi": {
+      "label": "Formules 12/14",
+      "hours": "De 12h à 14h uniquement",
+      "items": [
+        {
+          "name": "Burger",
+          "detail": "Un burger D-Lys au choix (hors Triple Cheese) + frites + boisson + dessert*",
+          "price_eur": 7.5,
+          "detail_short": "Burger D-Lys + frites + boisson + dessert*"
+        },
+        {
+          "name": "Tacos",
+          "detail": "Un tacos taille M + boisson + dessert*",
+          "price_eur": 8.5,
+          "detail_short": "Tacos M + boisson + dessert*"
+        }
+      ],
+      "footnote": "* Hors tiramisu et tarte au daim."
+    }
+  }
+}

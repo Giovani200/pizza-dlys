@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Pizza D-Lys",
+    "unofficial_notice": "Proposition de refonte, site non officiel",
+    "description": "{name}, fast-food à {city} : pizzas, tacos et burgers à emporter ou sur Uber Eats. {street}, {postal_code} {city}. Tél. {phone}."
+  },
+  "navigation": {
+    "label": "Navigation principale",
+    "home": "Pizza D-Lys, accueil",
+    "menu": "La carte",
+    "formules": "Formules",
+    "infos": "Infos",
+    "skip_to_content": "Aller au contenu",
+    "order_bar": "Commander"
+  },
+  "actions": {
+    "call": "Appeler",
+    "call_number": "Appeler le {phone}",
+    "uber_eats": "Uber Eats",
+    "order_uber_eats": "Commander sur Uber Eats",
+    "open_maps": "Ouvrir dans Google Maps",
+    "legal": "Mentions légales",
+    "new_tab": "(nouvel onglet)"
+  },
+  "status": {
+    "open": "Ouvert",
+    "closed": "Fermé",
+    "open_slot": "de {start} à {end}",
+    "opens_today": "ouvre à {time}",
+    "opens_tomorrow": "ouvre demain à {time}",
+    "opens_on": "ouvre {day} à {time}"
+  },
+  "offer_badge": {
+    "label": "À emporter",
+    "senior": "Senior dès",
+    "mega": "Méga dès {price}"
+  },
+  "home": {
+    "hero_title": [
+      "Pizzas,",
+      "Tacos",
+      "et",
+      "Burgers"
+    ],
+    "hero_tagline": "à Dammarie-les-Lys",
+    "marquee": [
+      "Pizzas",
+      "Tacos",
+      "Burgers",
+      "Formules",
+      "À emporter",
+      "Uber Eats"
+    ],
+    "menu_title": "La carte",
+    "pizzas": {
+      "title": "Pizzas",
+      "text": "{count} recettes, en Senior ou en Méga. Tarifs à emporter.",
+      "link": "Voir les {count} pizzas",
+      "featured": [
+        "Margherita",
+        "Reine",
+        "Orientale",
+        "4 Fromages",
+        "Savoyarde",
+        "Norvégienne",
+        "Chicago",
+        "Royale"
+      ],
+      "price_pair": "{senior} / {mega}"
+    },
+    "tacos": {
+      "title": "Tacos",
+      "text": "Composez le vôtre en 5 étapes : taille, base, garniture, sauces, suppléments.",
+      "link": "Composer mon tacos"
+    },
+    "burgers": {
+      "title": "Burgers",
+      "text": "{count} burgers. En menu, {price} pour les frites et une boisson.",
+      "link": "Voir les {count} burgers",
+      "featured": [
+        "Cheese Burger",
+        "Double Cheese",
+        "D-Lys Steak"
+      ]
+    },
+    "price_from": "dès",
+    "formules": {
+      "title": "Les formules",
+      "midi_item": "{name} 12/14",
+      "link": "Voir les formules",
+      "summary_note": "{label} {hours}. {footnote}"
+    },
+    "delivery": {
+      "title": "Pas envie de bouger ?",
+      "destination": "Chez vous"
+    },
+    "find_us": {
+      "title": "Nous trouver",
+      "hours": "Horaires",
+      "address": "Adresse",
+      "slot": "{start} à {end}"
+    }
+  },
+  "carte": {
+    "tabs_label": "Rubriques de la carte",
+    "tabs": {
+      "pizzas": "Pizzas",
+      "tacos": "Tacos",
+      "burgers": "Burgers",
+      "formules": "Formules"
+    },
+    "pizzas": {
+      "title": "La carte",
+      "intro": "{count} pizzas, en Senior ou en Méga. Tarifs à emporter.",
+      "families_label": "Familles de pizzas",
+      "family_count": "{count} pizzas",
+      "senior": "Senior",
+      "mega": "Méga",
+      "tap_hint": "Touchez une pizza pour voir ce qu’elle contient.",
+      "notes_title": "Bon à savoir"
+    },
+    "tacos": {
+      "title": "Composez votre tacos",
+      "intro": "En 5 étapes, de M à XL. Tarifs à emporter.",
+      "steps": [
+        "La taille",
+        "La base",
+        "La garniture",
+        "Les sauces",
+        "Les suppléments"
+      ],
+      "other_extras": "Autres suppléments",
+      "signatures": "Nos signatures",
+      "meats_one": "{count} viande",
+      "meats_other": "{count} viandes"
+    },
+    "burgers": {
+      "title": "Les burgers",
+      "intro": "{count} burgers, à la carte ou en menu. Tarifs à emporter.",
+      "menu_title": "En menu"
+    },
+    "formules": {
+      "title": "Les formules",
+      "intro": "Le menu à {price} et les formules du midi.",
+      "midi_kicker": "12/14",
+      "midi_title": "Formules du midi"
+    }
+  },
+  "infos": {
+    "title": "Nous trouver",
+    "sections_label": "Horaires et adresse"
+  },
+  "images": {
+    "pizza": "Pizza jambon, champignons et mozzarella sur une planche",
+    "tacos": "Tacos grillé garni de viande hachée, frites et sauce fromagère",
+    "burger": "Hamburger avec steak, cornichons et sauce",
+    "apple_tart": "Part de tarte aux pommes",
+    "counter_poster": "Affiche du comptoir : {items}",
+    "formula_poster": "Formule {name} {price} : {detail}",
+    "menu_poster": "{name} {price} : {detail}"
+  }
+}

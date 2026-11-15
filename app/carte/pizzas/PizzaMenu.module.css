@@ -1,0 +1,151 @@
+.section {
+  --section-padding-bottom: var(--space-72);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-28);
+  padding: var(--space-28) var(--side-padding) var(--section-padding-bottom);
+}
+
+.column {
+  display: contents;
+}
+
+.notes {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.selector {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-8);
+}
+
+.familyButton {
+  --family-button-height: 60px;
+
+  min-height: var(--family-button-height);
+  padding: var(--space-6);
+  border: var(--border);
+  border-radius: var(--radius-small);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: inherit;
+  line-height: var(--line-height-compact);
+  cursor: pointer;
+}
+
+.familyButton[aria-pressed="true"] {
+  background: var(--color-ink);
+  color: var(--color-cream);
+  box-shadow: var(--shadow-small);
+}
+
+.familyCount {
+  --count-gap: 3px;
+
+  display: block;
+  margin-top: var(--count-gap);
+  font-weight: var(--font-weight-regular);
+}
+
+.family[data-selected="false"] {
+  display: none;
+}
+
+.priceGrid {
+  --price-column: 46px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--price-column) var(--price-column);
+  gap: var(--space-10);
+}
+
+.family > .priceGrid {
+  align-items: end;
+  padding-bottom: var(--space-12);
+}
+
+.price {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.familyIntro {
+  margin-bottom: var(--space-8);
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.summary {
+  align-items: center;
+  min-height: var(--height-touch-min);
+  padding: var(--space-10) 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.plus {
+  display: inline-block;
+  width: 1em;
+  color: var(--color-red);
+  transition: transform var(--duration-base) ease;
+}
+
+.mobileRow[open] .plus {
+  transform: rotate(45deg);
+}
+
+.composition {
+  --composition-indent: 1.2em;
+
+  padding: 0 0 var(--space-10) var(--composition-indent);
+}
+
+.desktopRow {
+  display: none;
+  align-items: baseline;
+  padding: var(--space-10) 0;
+}
+
+@media (min-width: 75rem) {
+  .section {
+    --section-padding-bottom: 110px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: var(--space-48);
+    padding-top: var(--space-64);
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-48);
+  }
+
+  .selector,
+  .tapHint,
+  .mobileRow {
+    display: none;
+  }
+
+  .family[data-selected="false"] {
+    display: block;
+  }
+
+  .desktopRow {
+    display: grid;
+  }
+}
