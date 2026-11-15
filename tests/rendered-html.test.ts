@@ -67,7 +67,7 @@ describe("the generated pages are complete", () => {
   it.each(pages)("%s only references image files that exist", (file) => {
     const urls = imageUrls(parse(readFileSync(join(EXPORT_DIRECTORY, file), "utf8")));
     expect(urls.length).toBeGreaterThan(0);
-    const missing = urls.filter((url) => !existsSync(join(EXPORT_DIRECTORY, decodeURIComponent(url))));
+    const missing = urls.filter((url) => !existsSync(join(EXPORT_DIRECTORY, decodeURIComponent(url.split("?")[0]))));
     expect(missing).toEqual([]);
   });
 
