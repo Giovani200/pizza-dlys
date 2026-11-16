@@ -11,12 +11,14 @@ type ButtonProps = {
   icon?: "arrow" | "external";
   external?: boolean;
   current?: boolean;
+  /** Internal links only: false stops Next.js from scrolling to the top after navigating. */
+  scroll?: boolean;
   className?: string;
 };
 
 const ICON_GLYPHS = { arrow: "→", external: "↗" };
 
-export function Button({ href, children, tone, size, icon, external = false, current, className }: ButtonProps) {
+export function Button({ href, children, tone, size, icon, external = false, current, scroll, className }: ButtonProps) {
   const classNames = [styles.button, styles[tone], styles[size], className].filter(Boolean).join(" ");
   const iconElement = icon && <span aria-hidden="true">{ICON_GLYPHS[icon]}</span>;
   const iconSitsInLabel = size === "bar";
@@ -33,7 +35,7 @@ export function Button({ href, children, tone, size, icon, external = false, cur
 
   if (href.startsWith("/")) {
     return (
-      <Link className={classNames} href={href} aria-current={current ? "page" : undefined}>
+      <Link className={classNames} href={href} scroll={scroll} aria-current={current ? "page" : undefined}>
         {content}
       </Link>
     );

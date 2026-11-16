@@ -1,6 +1,6 @@
 .button {
   --hover-shift: -2px;
-  --press-shift: 3px;
+  --press-shift: 2px;
   --compact-height: 48px;
 
   display: flex;
@@ -26,9 +26,13 @@
   box-shadow: var(--shadow-card);
 }
 
+/* The shadow's outer edge stays put in every state: the button sinks into its shadow. */
 .button:active {
+  --pressed-shadow-offset: calc(var(--shadow-offset-small) - var(--press-shift));
+
   transform: translate(var(--press-shift), var(--press-shift));
-  box-shadow: 0 0 0 var(--color-ink);
+  box-shadow: var(--pressed-shadow-offset) var(--pressed-shadow-offset) 0 var(--color-ink);
+  transition-duration: 0s;
 }
 
 .red {
@@ -81,12 +85,8 @@
   letter-spacing: var(--letter-spacing-label);
 }
 
-.tab:not([aria-current]) {
+.tab:not([aria-current], :hover, :active) {
   box-shadow: none;
-}
-
-.tab:not([aria-current]):hover {
-  box-shadow: var(--shadow-card);
 }
 
 @media (min-width: 75rem) {

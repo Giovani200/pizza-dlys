@@ -13,7 +13,7 @@ const TITLE_ID = "page-title";
 export function PageBanner({ title, intro, product }: PageBannerProps) {
   return (
     <section className={`${styles.banner} halftone`} aria-labelledby={TITLE_ID}>
-      {product && <ProductImage {...product} priority />}
+      {product && <ProductImage {...product} priority entrance={false} />}
       <div className={styles.text}>
         <h1 id={TITLE_ID} className="script-type text-h2">
           {title}

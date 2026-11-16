@@ -3,9 +3,6 @@
  * They are read with fallbacks, never declared here, so the caller always wins the cascade.
  */
 .product {
-  --pop-duration: 0.9s;
-  --pop-offset: 46px;
-  --pop-start-scale: 0.86;
   --hover-scale: 1.04;
 
   position: absolute;
@@ -15,6 +12,13 @@
   transition:
     rotate 0.35s cubic-bezier(0.2, 0.9, 0.25, 1.2),
     scale 0.35s cubic-bezier(0.2, 0.9, 0.25, 1.2);
+}
+
+.entrance {
+  --pop-duration: 0.9s;
+  --pop-offset: 46px;
+  --pop-start-scale: 0.86;
+
   animation: pop var(--pop-duration) cubic-bezier(0.2, 0.9, 0.25, 1.15) var(--pop-delay, 0.2s) both;
 }
 

@@ -12,6 +12,7 @@ body {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
