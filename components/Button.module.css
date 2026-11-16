@@ -1,5 +1,6 @@
 .button {
   --hover-shift: -2px;
+  --hover-shadow: var(--shadow-card);
   --press-shift: 2px;
   --compact-height: 48px;
 
@@ -23,7 +24,7 @@
 
 .button:hover {
   transform: translate(var(--hover-shift), var(--hover-shift));
-  box-shadow: var(--shadow-card);
+  box-shadow: var(--hover-shadow);
 }
 
 /* The shadow's outer edge stays put in every state: the button sinks into its shadow. */
@@ -76,6 +77,8 @@
 .tab {
   --tab-content-height: 46px;
   --tab-padding: var(--space-4);
+  --hover-shift: 0px;
+  --hover-shadow: var(--shadow-small);
 
   box-sizing: content-box;
   justify-content: center;
@@ -85,7 +88,7 @@
   letter-spacing: var(--letter-spacing-label);
 }
 
-.tab:not([aria-current], :hover, :active) {
+.tab:not([aria-current], :active) {
   box-shadow: none;
 }
 
